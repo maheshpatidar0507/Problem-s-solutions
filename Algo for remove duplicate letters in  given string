@@ -1,6 +1,6 @@
 1. Take input of string 
 2. Convert string into Array
-3. Identify repeted letters using for loop
+3. Identify repeted letters using for loop and conditional statement
 4. Remove/delete repeted or duplicate letters 
-5 Cconvert array into string
+5 Convert array into string
 6. Print the string 
