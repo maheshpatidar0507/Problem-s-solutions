@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let Str = "madam";
+      Array1 = Str.split("");
+
+      //   for (let i = 0; i < Str.length; i++) {
+      //     const Array2 = Array2 + Array1[i];
+      //   }
+
+      console.log(Array1);
+      Array2 = Array1.reverse();
+      console.log(Array2);
+
+      for (let i = 0; i < Str.length; i++) {
+        if (Array1[i] == Array2[i]) {
+          console.log("True");
+        } else {
+          console.log("False");
+        }
+      }
+    </script>
+  </body>
+</html>
