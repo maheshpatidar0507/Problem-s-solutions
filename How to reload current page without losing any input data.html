@@ -1,0 +1,40 @@
+<!-- Question: How to reload current page without losing any input data? -->
+
+<!-- -----------------------Algo----------------------------- -->
+<!--
+Step 1: Create input box
+Step 2: create function and use element by getElement by Id
+Step 3: save in local storage using localstorage.setitem
+Step 4: get saved input on required event like page refresh, using geItem 
+Step 5 : use get Item in input box by default using IIFE or onkeyup etc -->
+
+<!-- -----------------------code----------------------------- -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body onload="getData()">
+    <input
+      type="text"
+      id="myInput"
+      placeholder="Enter your name here"
+      onkeyup="storeData()"
+    />
+  </body>
+  <script>
+    function storeData() {
+      store = localStorage.setItem(
+        "Username",
+        document.getElementById("myInput").value
+      );
+    }
+    function getData() {
+      document.getElementById("myInput").value =
+        localStorage.getItem("Username");
+    }
+  </script>
+</html>
