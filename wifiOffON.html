@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #wifi {
+        border: 1px solid black;
+        height: 10vh;
+        width: 10vh;
+      }
+    </style>
+  </head>
+  <body onload="wifiIsONOFF()">
+    <div id="wifi"></div>
+  </body>
+  <script>
+    function wifiIsONOFF() {
+      let x = navigator.onLine;
+
+      if (navigator.onLine) {
+        document.getElementById("wifi").style.backgroundColor = "green";
+      } else {
+        document.getElementById("wifi").style.backgroundColor = "red";
+      }
+    }
+  </script>
+</html>
